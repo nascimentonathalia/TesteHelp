@@ -8,6 +8,8 @@ import com.helpguiadeobra.helpguia.model.PostagemModel;
 
 @Repository
 public interface PostagemRepository extends JpaRepository<PostagemModel, Long> {
-	public List<PostagemModel>findAllByTitleContainingIgnoreCase (String title);
+	public List<PostagemModel>findAllByTitleContainingIgnoreCase (Long title);
+
+	
 
 }
